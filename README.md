@@ -1,2 +1,2 @@
-# React-js-stepper
+# munish
 Created with CodeSandbox
