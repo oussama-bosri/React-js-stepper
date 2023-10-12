@@ -25,57 +25,9 @@ const PrintOnly = () => {
   console.log(value, "value");
   return (
     <>
-      <h6>Sender Information</h6>
-      <div>
-        <div className="child">
-          <TextField
-            style={{ margin: 8, width: "93%" }}
-            fullWidth
-            label="Full Name"
-            value={upper(value.labelInfo.sender.name)}
-            InputProps={{
-              readOnly: true
-            }}
-          />
-          <TextField
-            label="Street Address"
-            fullWidth
-            margin="normal"
-            value={upper(value.labelInfo.sender.street)}
-            style={{ margin: 8, width: "93%" }}
-            InputProps={{
-              readOnly: true
-            }}
-          />
-
-          <TextField
-            required
-            style={{ width: "31%", margin: 1 }}
-            label="City"
-            value={upper(value.labelInfo.sender.city)}
-            InputProps={{
-              readOnly: true
-            }}
-          />
-          <TextField
-            required
-            style={{ width: "31%", margin: 1 }}
-            label="State"
-            value={upper(value.labelInfo.sender.state)}
-            InputProps={{
-              readOnly: true
-            }}
-          />
-          <TextField
-            required
-            style={{ width: "31%", margin: 1 }}
-            label="ZipCode"
-            value={value.labelInfo.sender.zipCode}
-            InputProps={{
-              readOnly: true
-            }}
-          />
-        </div>
+     
+   
+    
         <h6>Recevier Information</h6>
         <div className="child">
           <TextField
@@ -174,7 +126,7 @@ const PrintOnly = () => {
             Print Info
           </Button>
         </ButtonGroup>
-      </div>
+    
     </>
   );
 };

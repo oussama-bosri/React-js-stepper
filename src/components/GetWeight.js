@@ -12,11 +12,10 @@ const GetWeight = (props) => {
   const btnDisbaled = weight.length > 0;
   return (
     <form>
-      <h4> Enter Weight Details</h4>
-
+      <h4> Phone Number</h4>
       <TextField
         id="standard-full-width"
-        label="Enter Weight **Numbers Only"
+        label="Phone Number"
         style={{ margin: 8 }}
         fullWidth
         margin="normal"
@@ -26,7 +25,7 @@ const GetWeight = (props) => {
         onChange={value.handleChange("weight")}
         value={weight}
         InputProps={{
-          startAdornment: <InputAdornment position="start">lbs:</InputAdornment>
+          startAdornment: <InputAdornment position="start">N°:</InputAdornment>
         }}
       />
 

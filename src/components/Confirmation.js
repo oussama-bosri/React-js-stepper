@@ -25,56 +25,7 @@ const Confirmation = () => {
   console.log(value, "value");
   return (
     <>
-      <h6> Sender Details</h6>
-      <div className="child">
-        <TextField
-          style={{ margin: 8, width: "93%" }}
-          fullWidth
-          value={upper(value.labelInfo.sender.name)}
-          InputProps={{
-            readOnly: true
-          }}
-        />
-        <TextField
-          label="Street Address"
-          fullWidth
-          margin="normal"
-          value={upper(value.labelInfo.sender.street)}
-          style={{ margin: 8, width: "93%" }}
-          InputProps={{
-            readOnly: true
-          }}
-        />
-
-        <TextField
-          required
-          style={{ width: "31%", margin: 1 }}
-          label="City"
-          value={upper(value.labelInfo.sender.city)}
-          InputProps={{
-            readOnly: true
-          }}
-        />
-        <TextField
-          required
-          style={{ width: "31%", margin: 1 }}
-          label="State"
-          value={upper(value.labelInfo.sender.state)}
-          InputProps={{
-            readOnly: true
-          }}
-        />
-        <TextField
-          required
-          style={{ width: "31%", margin: 1 }}
-          label="ZipCode"
-          value={value.labelInfo.sender.zipCode}
-          InputProps={{
-            readOnly: true
-          }}
-        />
-      </div>
-      <h6> Recevier Details</h6>
+      <h6> User Information</h6>
       <div className="child">
         <TextField
           style={{ margin: 8, width: "93%" }}
@@ -123,7 +74,7 @@ const Confirmation = () => {
           }}
         />
       </div>
-      <h6> weight</h6>
+      <h6>Phene Number</h6>
       <div className="child">
         <TextField
           id="standard-full-width"
@@ -138,13 +89,13 @@ const Confirmation = () => {
           value={value.labelInfo.weight}
         />
       </div>
-      <h6> Slected Shipping option</h6>
+      <h6> Gender</h6>
       <div className="child">
         <TextField
           id="standard-full-width"
           style={{ margin: 8, width: "93%" }}
           fullWidth
-          value={value.labelInfo.shippingOption === "1" ? "GROUND" : "PRIOROTY"}
+          value={value.labelInfo.shippingOption === "1" ? "Male" : "Female"}
           InputProps={{
             readOnly: true
           }}

@@ -48,10 +48,10 @@ export const LabelProvider = (props) => {
     });
   };
   const steps = [
-    { title: "Get Sender addrtess" },
-    { title: "Get Reciver addrtess" },
-    { title: "Get Weight" },
-    { title: "Get Shipping Option" },
+   /*  { title: "Get Sender addrtess" }, */
+    { title: "User Information" },
+    { title: "Phone Number" },
+    { title: "Gender" },
     { title: "confirm" }
   ];
 

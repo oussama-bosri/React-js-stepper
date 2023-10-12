@@ -14,15 +14,15 @@ const App = (props) => {
   const value = useContext(LabelContext);
   return (
     <div className="App">
-      {value.page !== 5 && (
+      {value.page !== 4 && (
         <Stepper steps={value.steps} activeStep={value.page} />
       )}
-      {value.page === 0 && <SenderAddress />}
-      {value.page === 1 && <RecevierAddress />}
-      {value.page === 2 && <GetWeight />}
-      {value.page === 3 && <ShippingOption />}
-      {value.page === 4 && <Confirmation />}
-      {value.page === 5 && <Printonly />}
+      {/* {value.page === 0 && <SenderAddress />} */}
+      {value.page === 0 && <RecevierAddress />}
+      {value.page === 1 && <GetWeight />}
+      {value.page === 2 && <ShippingOption />}
+      {value.page === 3 && <Confirmation />}
+      {value.page === 4 && <Printonly />}
     </div>
   );
 };

@@ -18,7 +18,7 @@ const GetShippingOption = (props) => {
 
   return (
     <form>
-      <h4> Select shipping option</h4>
+      <h4>Gender</h4>
       <RadioGroup
         aria-label="weight"
         name="weight"
@@ -28,13 +28,13 @@ const GetShippingOption = (props) => {
       >
         <FormControlLabel
           control={<Radio />}
-          label="Ground"
+          label="Male"
           value="1"
           onChange={val.handleChange("shippingOption")}
         />
         <FormControlLabel
           control={<Radio />}
-          label="Priority"
+          label="Female"
           value="2"
           onChange={val.handleChange("shippingOption")}
         />
