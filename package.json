@@ -16,7 +16,8 @@
     "reactstrap": "8.9.0",
     "redux": "4.0.5",
     "redux-form": "8.3.7",
-    "thunk": "0.0.1"
+    "thunk": "0.0.1",
+    "proxy": "http://192.168.1.27:81/"
   },
   "devDependencies": {
     "typescript": "4.1.3"

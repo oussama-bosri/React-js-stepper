@@ -11,7 +11,7 @@ const RecevierAddress = (props) => {
 
   useEffect(() => {
     // Fetch default data from your API
-    fetch("https://jsonplaceholder.typicode.com/users/1")
+    fetch("http://192.168.1.27:81/details/2/registration-data/")
       .then((response) => response.json())
       .then((data) => {
         setDefaultData(data);
@@ -38,7 +38,7 @@ const RecevierAddress = (props) => {
         margin="normal"
         required
         onChange={value.setRecevierInfo("name")}
-        value={recevier.name || (defaultData && defaultData.name) || ""}
+        value={recevier.name || (defaultData && defaultData.ComapnyName) || ""}
       />
       <TextField
         label="Enter Street Address"
@@ -47,7 +47,7 @@ const RecevierAddress = (props) => {
         margin="normal"
         required
         onChange={value.setRecevierInfo("street")}
-        value={recevier.street || (defaultData && defaultData.address.street) || ""}
+        value={recevier.street || (defaultData && defaultData.CompanyCountry) || ""}
       />
       <div>
         <TextField
@@ -55,14 +55,14 @@ const RecevierAddress = (props) => {
           style={{ width: "31%", margin: 1 }}
           label="Enter City"
           onChange={value.setRecevierInfo("city")}
-          value={recevier.city || (defaultData && defaultData.address.city) || ""}
+          value={recevier.city || (defaultData && defaultData.CompanyCity) || ""}
         />
         <TextField
           required
           style={{ width: "31%", margin: 1 }}
           label="Enter State"
           onChange={value.setRecevierInfo("state")}
-          value={recevier.state || (defaultData && defaultData.address.city) || ""}
+          value={recevier.state || (defaultData && defaultData.CompanyState) || ""}
         />
         <TextField
           required
@@ -70,7 +70,7 @@ const RecevierAddress = (props) => {
           label="Enter ZipCode"
           onChange={value.setRecevierInfo("zipCode")}
           /* type="number" */
-          value={recevier.zipCode || (defaultData && defaultData.address.zipcode) || ""}
+          value={recevier.zipCode || (defaultData && defaultData.CompanyZip) || ""}
         />
       </div>
       <ButtonGroup
