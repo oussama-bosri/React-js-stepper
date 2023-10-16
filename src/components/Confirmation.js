@@ -30,7 +30,7 @@ const Confirmation = () => {
         <TextField
           style={{ margin: 8, width: "93%" }}
           fullWidth
-          value={upper(value.labelInfo.recevier.name)}
+          value={upper(value.labelInfo.recevier.ComapnyName)}
           InputProps={{
             readOnly: true
           }}
